@@ -40,6 +40,7 @@ function CustomButton(props) {
       <Button
         classes={{ root: props.classes.root }}
         className={props.classes.darkBtn}
+        onClick={props.onClick}
       >
         {props.children}
       </Button>
@@ -49,6 +50,7 @@ function CustomButton(props) {
       <Button
         classes={{ root: props.classes.root }}
         className={props.classes.lightBtn}
+        onClick={props.onClick}
       >
         {props.children}
       </Button>
@@ -58,6 +60,7 @@ function CustomButton(props) {
       <Button
         classes={{ root: props.classes.root }}
         className={props.classes.sdarot}
+        onClick={props.onClick}
       >
         {props.children}
       </Button>
