@@ -84,25 +84,26 @@ function App() {
         )}
 
         <div className='generate'>
-          <div
-            onClick={() => {
-              handleGenerateBtn();
-            }}
-          >
-            <CustomButton modeType={darkMode ? 'dark' : 'light'}>
+          <div>
+            <CustomButton
+              onClick={() => {
+                handleGenerateBtn();
+              }}
+              modeType={darkMode ? 'dark' : 'light'}
+            >
               Generate Random Episode
               <img src={kyle} alt='kyle' />
             </CustomButton>
           </div>
-
           {episode && (
             <>
-              <div
-                onClick={() => {
-                  handleWatchBtn();
-                }}
-              >
-                <CustomButton modeType={'sdarot'}>
+              <div>
+                <CustomButton
+                  modeType={'sdarot'}
+                  onClick={() => {
+                    handleWatchBtn();
+                  }}
+                >
                   Watch Episode
                   <img src={stan} alt='stan' />
                 </CustomButton>
