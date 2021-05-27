@@ -16,6 +16,7 @@ import Footer from './components/Footer/Footer';
 import kyle from './assets/images/kyle.png';
 import stan from './assets/images/stan.png';
 import logo from './assets/images/logo.png';
+
 import './App.css';
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
   };
 
   const handleWatchBtn = () => {
-    const episodeURL = `https://sdarot.today/watch/76-%D7%A1%D7%90%D7%95%D7%AA-%D7%A4%D7%90%D7%A8%D7%A7-south-park/season/${episode.Season}/episode/${episode.Episode}`;
+    const episodeURL = `https://sdarot.life/watch/76-%D7%A1%D7%90%D7%95%D7%AA-%D7%A4%D7%90%D7%A8%D7%A7-south-park/season/${episode.Season}/episode/${episode.Episode}`;
     window.open(episodeURL, 'Episode_WindowName');
   };
 

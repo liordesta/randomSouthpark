@@ -22,22 +22,15 @@ export const seasonEpisodes = {
   21: 10,
   22: 10,
   23: 10,
-  24: 1,
+  24: 2,
 };
 
-export const getRandomSeason = (min, max) =>
+export const randomNumGenerator = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
 
 export const getRandomEpisode = () => {
-  const randomSeason = getRandomSeason(1, 24);
-  let episodesPerSeason;
-  for (let key in seasonEpisodes) {
-    if (key === randomSeason.toString()) {
-      episodesPerSeason = seasonEpisodes[key];
-      break;
-    }
-  }
-  const randomEpisode = getRandomSeason(1, episodesPerSeason);
-
+  const randomSeason = randomNumGenerator(1, 24);
+  let episodesPerSeason = seasonEpisodes[randomSeason];
+  const randomEpisode = randomNumGenerator(1, episodesPerSeason);
   return `season=${randomSeason}&episode=${randomEpisode}`;
 };

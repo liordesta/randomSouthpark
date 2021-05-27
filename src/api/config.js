@@ -1,6 +1,6 @@
 import { getRandomEpisode } from '../util/util';
 
-const apiKey = '2fe8764a';
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export const episodeConfig = () => {
   getRandomEpisode();
